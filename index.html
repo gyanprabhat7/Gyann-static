@@ -1,570 +1,903 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="/assets/consider-hybrid-work.8538a0e2.css" />
-<link rel="stylesheet" href="/assets/contact.271e14f3.css" />
-<link rel="stylesheet" href="/assets/index.a70de223.css" /><script type="module">
-</script>
-<script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
-/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
-var N = Object.defineProperty;
-var i = (t, n) => () => (t && (n = t((t = 0))), n);
-var b = (t, n) => {
-	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
-};
-function s() {
-	if (d === void 0) {
-		let t = document.createElement('div');
-		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
-			(d = !!t.firstElementChild.shadowRoot);
-	}
-	return d;
-}
-var d,
-	m = i(() => {});
-var p,
-	c,
-	f,
-	u = i(() => {
-		(p = (t) => t.parentElement === null),
-			(c = (t) => t.tagName === 'TEMPLATE'),
-			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
-	});
-var h,
-	E = i(() => {
-		m();
-		u();
-		h = (t) => {
-			var n;
-			if (s()) return;
-			let a = [],
-				e = t.firstElementChild;
-			for (; e !== t && e !== null; )
-				if (c(e)) a.push(e), (e = e.content);
-				else if (e.firstElementChild !== null) e = e.firstElementChild;
-				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
-				else {
-					let o;
-					for (; e !== t && e !== null; )
-						if (p(e)) {
-							o = a.pop();
-							let r = o.parentElement,
-								l = o.getAttribute('shadowroot');
-							if (((e = o), l === 'open' || l === 'closed')) {
-								let y = o.hasAttribute('shadowrootdelegatesfocus');
-								try {
-									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
-								} catch {}
-							} else o = void 0;
-						} else {
-							let r = e.nextElementSibling;
-							if (r != null) {
-								(e = r), o !== void 0 && o.parentElement.removeChild(o);
-								break;
-							}
-							let l =
-								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
-							if (l != null) {
-								(e = l), o !== void 0 && o.parentElement.removeChild(o);
-								break;
-							}
-							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
-						}
-				}
-		};
-	});
-var w = i(() => {
-	E();
-});
-var v = {};
-b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
-var S = i(() => {
-	m();
-	w();
-});
-async function g() {
-	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
-	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
-}
-var x = new DOMParser()
-	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
-		includeShadowRoots: !0,
-	})
-	.querySelector('p');
-(!x || !x.shadowRoot) && g();
-</script><div class="announcement-banner__container astro-CKKB6XPP">
-  <p class="astro-CKKB6XPP">
-    <a href="https://open.spotify.com/album/64xe5iGOqlKjR5AwACFxWh" class="astro-CKKB6XPP" target="_blank">
-      Listen to my latest release on Spotify!
-    </a>
-  </p>
-</div>
 <html lang="en">
-	<head>
-		
-		<!-- Global Metadata --><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="icon" type="image/png" href="/favicon.png">
-<!-- Primary Meta Tags -->
-<title>Gyan Prabhat</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyan Prabhat - Creative Designer & Founder of Epiction Interactive</title>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Gyan Prabhat",
-  "alternateName": "Epiction Founder",
-  "url": "https://gyan.epiction.co",  
-  "image": "https://epiction.co/wp-content/uploads/2024/09/PHOTO-2024-09-17-12-52-18.jpg",
-  "jobTitle": "Founder of Epiction Interactive",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Epiction Interactive",
-    "url": "https://epiction.co"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/gyanprabhat/",
-    "https://www.crunchbase.com/person/gyan-prabhat",
-    "https://www.imdb.com/name/nm16534803/",
-    "https://www.instagram.com/gyann.co/",
-    "https://apnews.com/press-release/ein-presswire-newsmatics/epiction-interactive-introduces-ai-article-summarizer-a-new-way-to-engage-with-content-882698e6f6ff30aad7f2ea587890db81",
-    "https://www.issuewire.com/epiction-launches-new-service-brand-epiction-softworks-offering-comprehensive-software-solutions-1810445048675519"
-  ],
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "ITM University",  
-    "url": "https://itmbu.ac.in"  
-  },
-  "birthPlace": {
-    "@type": "Place",
-    "name": "India"
-  },
-  "nationality": "Indian",
-  "knowsAbout": [
-    "Video Games",
-    "AI Tools",
-    "Web Development",
-    "Tech Entrepreneurship",
-    "Cinematography"
-  ],
-  "gender": "Male"
-}
-</script>
-
-		
-<meta name="title" content="Gyann Prabhat">
-<meta name="description" content="Gyan Prabhat (founder Epiction Interactive).">
-<link rel="canonical" href="https://gyan.epiction.co/">
-<!-- Generator -->
-<meta name="generator" content="Astro v1.6.2">
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://gyan.epiction.co/">
-<meta property="og:title" content="Gyann | Personal Site">
-<meta property="og:description" content="Gyan Prabhat (founder Epiction Interactive) personal website.">
-<meta property="og:image" content="https://gyan.epiction.co/social.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://gyan.epiction.co/">
-<meta property="twitter:title" content="Gyann | Personal Site">
-<meta property="twitter:description" content="Gyan Prabhat (founder Epiction Interactive) personal website.">
-<meta property="twitter:image" content="https://gyan.epiction.co/social.png">
-
-<!-- For Demonstration of the themes -->
-<!-- This is a simple script to check if there is a theme value in local storage. That way the theme stays with you between pages --><script>
-	const doc = document.firstElementChild;
-	const localStorageTheme = localStorage.getItem('theme');
-
-	if (localStorageTheme !== null) {
-		doc.setAttribute('data-theme', localStorageTheme);
-	}
-</script>
-
-
-<!-- Google Analytics -->
-
-	<link rel="stylesheet" href="/assets/consider-hybrid-work.8538a0e2.css" />
-<link rel="stylesheet" href="/assets/contact.271e14f3.css" />
-<link rel="stylesheet" href="/assets/index.a70de223.css" /><script type="module">
-</script>
-<script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
-/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
-var N = Object.defineProperty;
-var i = (t, n) => () => (t && (n = t((t = 0))), n);
-var b = (t, n) => {
-	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
-};
-function s() {
-	if (d === void 0) {
-		let t = document.createElement('div');
-		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
-			(d = !!t.firstElementChild.shadowRoot);
-	}
-	return d;
-}
-var d,
-	m = i(() => {});
-var p,
-	c,
-	f,
-	u = i(() => {
-		(p = (t) => t.parentElement === null),
-			(c = (t) => t.tagName === 'TEMPLATE'),
-			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
-	});
-var h,
-	E = i(() => {
-		m();
-		u();
-		h = (t) => {
-			var n;
-			if (s()) return;
-			let a = [],
-				e = t.firstElementChild;
-			for (; e !== t && e !== null; )
-				if (c(e)) a.push(e), (e = e.content);
-				else if (e.firstElementChild !== null) e = e.firstElementChild;
-				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
-				else {
-					let o;
-					for (; e !== t && e !== null; )
-						if (p(e)) {
-							o = a.pop();
-							let r = o.parentElement,
-								l = o.getAttribute('shadowroot');
-							if (((e = o), l === 'open' || l === 'closed')) {
-								let y = o.hasAttribute('shadowrootdelegatesfocus');
-								try {
-									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
-								} catch {}
-							} else o = void 0;
-						} else {
-							let r = e.nextElementSibling;
-							if (r != null) {
-								(e = r), o !== void 0 && o.parentElement.removeChild(o);
-								break;
-							}
-							let l =
-								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
-							if (l != null) {
-								(e = l), o !== void 0 && o.parentElement.removeChild(o);
-								break;
-							}
-							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
-						}
-				}
-		};
-	});
-var w = i(() => {
-	E();
-});
-var v = {};
-b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
-var S = i(() => {
-	m();
-	w();
-});
-async function g() {
-	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
-	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
-}
-var x = new DOMParser()
-	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
-		includeShadowRoots: !0,
-	})
-	.querySelector('p');
-(!x || !x.shadowRoot) && g();
-</script></head>
-	<body>
-		<a href="#content" class="astro-BDIWEA2F">Skip to main content</a>
-
-
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Gyan Prabhat",
+          "alternateName": "Epiction Founder",
+          "url": "https://gyan.epiction.co",  
+          "image": "https://epiction.co/wp-content/uploads/2024/09/PHOTO-2024-09-17-12-52-18.jpg",
+          "jobTitle": "Creative Designer & Founder of Epiction Interactive",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Epiction Interactive",
+            "url": "https://epiction.co"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/gyanprabhat/",
+            "https://www.crunchbase.com/person/gyan-prabhat",
+            "https://www.imdb.com/name/nm16534803/",
+            "https://www.instagram.com/gyann.co/",
+            "https://apnews.com/press-release/ein-presswire-newsmatics/epiction-interactive-introduces-ai-article-summarizer-a-new-way-to-engage-with-content-882698e6f6ff30aad7f2ea587890db81",
+            "https://www.issuewire.com/epiction-launches-new-service-brand-epiction-softworks-offering-comprehensive-software-solutions-1810445048675519"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "ITM University",  
+            "url": "https://itmbu.ac.in"  
+          },
+          "birthPlace": {
+            "@type": "Place",
+            "name": "India"
+          },
+          "nationality": "Indian",
+          "knowsAbout": [
+            "Video Games",
+            "AI Tools",
+            "Web Development",
+            "Tech Entrepreneurship",
+            "Cinematography"
+          ],
+          "gender": "Male"
+        }
+        </script>
+        
+                
+        <meta name="title" content="Gyann Prabhat">
+        <meta name="description" content="Gyan Prabhat (founder Epiction Interactive).">
+        <link rel="canonical" href="https://gyan.epiction.co/">
+        <!-- Generator -->
+        <meta name="generator" content="Astro v1.6.2">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://gyan.epiction.co/">
+        <meta property="og:title" content="Gyann | Personal Site">
+        <meta property="og:description" content="Gyan Prabhat (founder Epiction Interactive) personal website.">
+        <meta property="og:image" content="https://gyan.epiction.co/social.png">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gyan.epiction.co/">
+        <meta property="twitter:title" content="Gyann | Personal Site">
+        <meta property="twitter:description" content="Gyan Prabhat (founder Epiction Interactive) personal website.">
+        <meta property="twitter:image" content="https://gyan.epiction.co/social.png">
     
-		<script type="module">
-  const bodyElement = document.querySelector('body');
-  const menuButton = document.querySelector('#menuButton')
-  const navHeader = document.querySelector('#odysseyNavHeader');
-  const menuButtonIconHam = document.querySelector('#menuButtonIconHam');
-  const menuButtonIconClose = document.querySelector('#menuButtonIconClose');
-  let scrollPosition = 0;
-
-  menuButton.addEventListener('click', toggleMenu)
-
-  function toggleMenu() {
-    menuButtonIconHam.toggleAttribute('hidden');
-    menuButtonIconClose.toggleAttribute('hidden');
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    if (navHeader.hasAttribute('mobile-menu-open', true)) {
-      menuButton.title = "Open Main Menu"
-      // unlock scroll position
-      bodyElement.style.removeProperty('overflow');
-      bodyElement.style.removeProperty('position');
-      bodyElement.style.removeProperty('top');
-      bodyElement.style.removeProperty('width');
-      window.scrollTo(0, scrollPosition);
-    } else {
-      menuButton.title = "Close Main Menu"
-      // lock scroll position
-      scrollPosition = window.pageYOffset;
-      bodyElement.style.overflow = 'hidden';
-      bodyElement.style.position = 'fixed';
-      bodyElement.style.top = `-${scrollPosition}px`;
-      bodyElement.style.width = '100%';
-    }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rozha+One&family=Teko:wght@300;400;500;600;700&family=Abril+Fatface&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     
-    navHeader.toggleAttribute('mobile-menu-open');
-  }
-</script>  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<header id="odysseyNavHeader" class="header--right astro-7I2N7XJP">
-  <div class="header-logo-menu__container astro-7I2N7XJP">
-  <button id="menuButton" title="Open Main Menu" class="astro-7I2N7XJP">
-    <span id="menuButtonIconHam" class="astro-7I2N7XJP">
-      <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-7I2N7XJP" astro-icon="ic:baseline-menu"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </span>
-    <span id="menuButtonIconClose" hidden class="astro-7I2N7XJP">
-      <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-7I2N7XJP" astro-icon="ic:baseline-close"><path fill="currentColor" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-    </span>
-  </button>
-  <a class="header-logo__link astro-7I2N7XJP" href="/">
-    <span>
-			<p class="odyssey-logo astro-GIPQEZQB">Gyann</p>
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'indi-yellow': '#FFD700',
+                        'indi-mustard': '#D4A017',
+                        'indi-pink': '#E10098', // Rani Pink
+                        'indi-red': '#B30000',
+                        'indi-maroon': '#800000',
+                        'indi-blue': '#00BFFF',
+                        'indi-teal': '#008080',
+                        'indi-green': '#00A86B',
+                        'indi-paper': '#F5E6CA',
+                        'indi-ink': '#1A1A1A',
+                        'retro-orange': '#FF4500',
+                        'neon-lime': '#CCFF00',
+                        'coffee-brown': '#4B3621',
+                        'marble-white': '#F0F0F0',
+                    },
+                    fontFamily: {
+                        'display': ['"Rozha One"', 'serif'],
+                        'condensed': ['"Anton"', 'sans-serif'],
+                        'tech': ['"Teko"', 'sans-serif'],
+                        'type': ['"Courier Prime"', 'monospace'],
+                        'ornate': ['"Abril Fatface"', 'cursive'],
+                        'ancient': ['"Cinzel"', 'serif'],
+                    },
+                    backgroundImage: {
+                        'halftone': 'radial-gradient(circle, #1A1A1A 2px, transparent 2.5px)',
+                        'grid-paper': 'linear-gradient(#e5e5e5 1px, transparent 1px), linear-gradient(90deg, #e5e5e5 1px, transparent 1px)',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'spin-reverse': 'spin 15s linear reverse infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'chaos': 'chaos 2s steps(4) infinite',
+                        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        chaos: {
+                            '0%': { transform: 'translate(0,0) rotate(0deg)' },
+                            '25%': { transform: 'translate(5px, -5px) rotate(2deg)' },
+                            '50%': { transform: 'translate(-5px, 5px) rotate(-2deg)' },
+                            '75%': { transform: 'translate(5px, 5px) rotate(1deg)' },
+                            '100%': { transform: 'translate(0,0) rotate(0deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
+    <style>
+        /* --- GLOBAL TEXTURES & RESET --- */
+        :root {
+            --noise-color: #000000;
+        }
 
-		</span>
-  </a>
-  </div>
-  <div class="header-nav__container astro-7I2N7XJP">
-    
-      <nav class="astro-7I2N7XJP">
-        <ul class="astro-7I2N7XJP">
-          <li class="astro-7I2N7XJP"><a href="/" class="astro-7I2N7XJP">Home</a></li><li class="astro-7I2N7XJP"><a href="/blog" class="astro-7I2N7XJP">Blog</a></li><li class="astro-7I2N7XJP"><a href="/company/about" class="astro-7I2N7XJP">About</a></li><li class="astro-7I2N7XJP"><a href="/company/contact" class="astro-7I2N7XJP">Contact</a></li>
-        </ul>
-      </nav>
-    
-  </div>
-  <div class="header-action-item__container astro-7I2N7XJP">
-    <a class="btn undefined undefined undefined astro-5VNEE24L" href="https://www.linkedin.com/in/gyanprabhat/" target="_blank" rel="">Connect</a>
+        body {
+            background-color: #F5E6CA;
+            color: #1A1A1A;
+            overflow-x: hidden;
+            cursor: crosshair;
+        }
 
+        /* Paper Texture Overlay */
+        .texture-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+            opacity: 0.12;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            mix-blend-mode: multiply;
+        }
 
-  </div>
-</header>
-		<main id="content">
-			<div id="page">
-		<div class="content__container  astro-4LGS25LW">
-  <section class="text-and-image__section text-and-image__section--reversed astro-I47SMRPE">
-		<div class="text-and-image__text astro-I47SMRPE">
-			<div>
-			<h1>Gyan Prabhat</h1>
-<p>
-    Techpreneur, Creative Consultant, Film Enthusiast, Digital Media Producer, Video Game Artist & Publisher <br>
-    Proud Founder of <a href="https://epiction.co/" target="_blank">Epiction Interactive</a> <br>
-    Published Author & Music Composer
-</p>
-		</div>
-			<div class="text-and-image__btns astro-I47SMRPE">
-				<div>
-			<a class="btn undefined undefined undefined astro-5VNEE24L" href="https://in.linkedin.com/in/gyanprabhat" target="_blank" rel="">Connect on LinkedIn <span class="custom-icon__span astro-5VNEE24L"><svg viewBox="0 0 24 24" astro-icon="ic:baseline-chevron-right"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span></a>
+        /* Scanline Overlay */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+            background-size: 100% 4px;
+            z-index: 998;
+            pointer-events: none;
+            opacity: 0.4;
+        }
 
+        /* --- ORNAMENTAL PATTERNS --- */
+        .pattern-zigzag {
+            background-image: linear-gradient(135deg, #FFD700 25%, transparent 25%), linear-gradient(225deg, #FFD700 25%, transparent 25%), linear-gradient(45deg, #FFD700 25%, transparent 25%), linear-gradient(315deg, #FFD700 25%, transparent 25%);
+            background-position:  10px 0, 10px 0, 0 0, 0 0;
+            background-size: 20px 20px;
+            background-repeat: repeat;
+            opacity: 0.2;
+        }
 
-		</div>
-			</div>
-		</div>
-		<div class="text-and-image__image astro-I47SMRPE">
-			<picture>
-			<img src="https://epiction.co/wp-content/uploads/2024/09/IMG_8684-scaled.jpeg" alt="Gyan" id="home-hero-image">
-		</picture>
-		</div>
-	</section>
-</div>
+        /* --- TYPOGRAPHY EFFECTS --- */
+        .text-stroke {
+            -webkit-text-stroke: 1px black;
+            color: transparent;
+        }
+        
+        .text-shadow-retro {
+            text-shadow: 3px 3px 0px #E10098, 6px 6px 0px #00BFFF;
+        }
 
-<astrodoc class="astro-ERFA737N">
-    
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Coding with Robby</title>
-      <link rel="stylesheet" href="./style.css">
-      
-    </astrodoc>
-    
-      <div class="logos astro-ERFA737N">
-        <h2 class="astro-ERFA737N">Recognitions</h2>
-        <div class="logos-slide astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/codeday.png" alt="CodeDay" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/NeoDocto.png" alt="NeoDocto" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/harvardx.png" alt="HarvardX" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/googledeveloper.png" alt="Gooder Developer Launchpad" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/programminghub.png" alt="ProgrammingHub" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/hostingraja.png" alt="Hosting Raja" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/inamigos.png" alt="InAmigosFoundation" class="astro-ERFA737N">
-          
-          <!-- Duplicate logos for infinite loop -->
-          <img loading="lazy" src="/assets/images/logos/codeday.png" alt="CodeDay" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/NeoDocto.png" alt="NeoDocto" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/harvardx.png" alt="HarvardX" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/programminghub.png" alt="ProgrammingHub" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/hostingraja.png" alt="Hosting Raja" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/inamigos.png" alt="InAmigosFoundation" class="astro-ERFA737N">
-          <img loading="lazy" src="/assets/images/logos/googledeveloper.png" alt="Gooder Developer Launchpad" class="astro-ERFA737N">
-        </div>
-      </div><div class="content__container  astro-4LGS25LW">
-  <section class="three-col-text__section astro-J2JXBTMS">
-      <div class="three-col-text__column astro-J2JXBTMS">
-        <div>
-			<h2>GetSofworks</h2>
-			<p>
-				Take your business to the next level with Softworks. From web development to 3D modeling, we have the digital solutions you need for online success.
-			</p>
-		</div>
-        <a class="btn undefined undefined undefined astro-5VNEE24L" href="https://getsoftworks.com" target="_blank" rel="">Learn More</a>
+        .text-shadow-hard {
+            text-shadow: 4px 4px 0px #000;
+        }
 
+        .text-shadow-neon {
+            text-shadow: 0 0 5px #CCFF00, 0 0 10px #CCFF00;
+        }
 
-      </div>
-      <div class="three-col-text__column astro-J2JXBTMS">
-        <div>
-			<h2>Epiction Co</h2>
-			<p>
-				Epiction Interactive is a premier software startup owned by Gyann Co creating innovative and engaging games for players of all ages. Offering a wide variety of gaming experiences.
-			</p>
-		</div>
-        <a class="btn undefined btn--outlined undefined astro-5VNEE24L" href="https://epiction.co" target="_blank" rel="">Learn More</a>
+        /* --- ANIMATIONS --- */
+        @keyframes jitter {
+            0% { transform: translate(0,0); }
+            10% { transform: translate(-1px,-1px); }
+            20% { transform: translate(1px,1px); }
+            30% { transform: translate(-2px,1px); }
+            40% { transform: translate(1px,-2px); }
+            50% { transform: translate(0,0); }
+            100% { transform: translate(0,0); }
+        }
 
+        .animate-jitter {
+            animation: jitter 0.8s infinite;
+        }
 
-      </div>
-      <div class="three-col-text__column astro-J2JXBTMS">
-        <div>
-			<h2>Coders Potion</h2>
-			<p>
-				'Coders Potion' the ultimate coffee stop for techies and code wizards. We might not be brewing in a lab, but we're definitely brewing up some awesome blends that pair perfectly with lines of code.
-			</p>
-		</div>
-        <a class="btn undefined undefined undefined astro-5VNEE24L" href="https://coderspotion.company.site" target="_blank" rel="">Learn More</a>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
 
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
 
-      </div>
-    </section>
-</div><div class="content__container  astro-4LGS25LW">
-  <section class="youtube-embed__section astro-IISG4BTM">
-    
+        @keyframes flicker {
+            0% { opacity: 1; }
+            5% { opacity: 0.8; }
+            10% { opacity: 1; }
+            80% { opacity: 1; }
+            85% { opacity: 0.3; }
+            90% { opacity: 1; }
+            100% { opacity: 1; }
+        }
 
-<div class="youtube-embed__container youtube-embed__container--rounded astro-M7H4CTUH">	
-  <iframe src="https://www.youtube.com/embed/I6fmYT9bYtg?si=p7hREf2YOqBDH3Kh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" class="astro-M7H4CTUH">
-  </iframe>
-</div>
-  </section>
-</div><div class="content__container  astro-4LGS25LW">
-  <section class="sticky-text-image__section undefined astro-PIGZAGOA">
-    <div class="sticky-text-image__text astro-PIGZAGOA">
-      <div>
-      <h2>Remarkable Work and Collaborations</h2>
-      <h3>Undead FPS</h3>
-      <p>
-        A wave based first person shooter zombie game developed by Aventum studio (now Epiction). The game has 100 waves each time the number of zombies multiply by four making it harder and harder to win this game.
-      </p>
-      <h3>LazyLoad.JS</h3>
-        <p>
-			Lazy Load JS is a lightweight JavaScript library designed to enhance web page performance by implementing lazy loading for images. Images are loaded only when they are about to become visible in the user's viewport, reducing initial page load times and saving bandwidth.
-      </p>
-       <h3>Reality Shift Engine (Roop)</h3>
-        <p>
-			A deepfake AI program based on Roop (an discontinued open-source ai project). Program helps you to create double images and videos by utilizing deepfake algorithms.
-      </p> 
-    </div>
-    </div>
-    <div class="sticky-text-image__image astro-PIGZAGOA">
-      <picture>
-      <img src="/assets/images/landing-1/gyann.png" alt="Astro Odyssey" loading="lazy">
-    </picture>
-    </div>
-  </section>
-</div><div class="content__container  astro-4LGS25LW">
-  <section class="cta-card__section astro-WLK26BTO" style="--section-bg:var(--theme-surface-2); --section-color:var(--theme-on-surface-2)">
-    <div class="cta-card__container astro-WLK26BTO">
-      <h6>Sponsored</h6><h2>Reach new heights with Go Digital</h2><p>It only takes a couple clicks to take your business online.</p><a class="btn undefined undefined undefined astro-5VNEE24L" href="https://godigital.epiction.co" target="" rel="">Explore GoDigital <span class="custom-icon__span astro-5VNEE24L"><svg viewBox="0 0 24 24" astro-icon="ic:baseline-chevron-right"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span></a>
+        .animate-flicker {
+            animation: flicker 4s infinite;
+        }
 
+        @keyframes stamp-down {
+            0% { transform: scale(3) rotate(15deg); opacity: 0; }
+            100% { transform: scale(1) rotate(-5deg); opacity: 1; }
+        }
 
-    </div>
-  </section>
-</div>
+        .stamp-enter {
+            animation: stamp-down 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
 
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
+        }
+        .scan-bar {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #CCFF00;
+            box-shadow: 0 0 10px #CCFF00;
+            animation: scan 3s linear infinite;
+            z-index: 20;
+            opacity: 0.7;
+        }
 
-	</div>
-		</main>
-		<footer style="--footer-bg:var(--theme-surface-1); --footer-color:var(--theme-on-surface-1)" class="astro-A52JHQYS">
-  <div class="content__container  astro-4LGS25LW">
-  <div class="footer-grid__container astro-A52JHQYS">
-      <div class="footer-brand__container astro-A52JHQYS">
-        <div class="astro-A52JHQYS">
-          <p class="odyssey-logo astro-GIPQEZQB">Gyann</p>
+        /* --- COMPONENT STYLES --- */
+        
+        .bg-halftone {
+            background-size: 20px 20px;
+            background-image: radial-gradient(circle, #000000 20%, transparent 20%);
+        }
 
+        .section-border {
+            border: 4px solid #1A1A1A;
+            box-shadow: 12px 12px 0px #1A1A1A;
+        }
 
-        </div>
-        <ul class="footer-socials__list astro-A52JHQYS">
-          <li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://twitter.com/gyanprabhat_" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Twitter profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:twitter"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 16px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5E6CA;
+            border-left: 2px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E10098;
+            border: 2px solid #000;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B30000;
+        }
+
+        /* Abstract Shape Animations for Atelier */
+        .shape-blob {
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body class="selection:bg-indi-pink selection:text-white">
+
+    <!-- Overlays -->
+    <div class="texture-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-screen overflow-hidden relative">
+
+        <!-- HEADER: POSTER STYLE -->
+        <header class="min-h-screen flex flex-col justify-between border-b-8 border-black bg-indi-mustard relative">
+            
+            <!-- Top Marquee -->
+            <div class="border-b-4 border-black bg-indi-ink text-indi-yellow py-2 marquee-container font-tech text-2xl uppercase tracking-widest z-10">
+                <div class="marquee-content">
+                    /// State Level Boxing Gold Medalist /// Creative Consultant /// Techpreneur /// Video Game Artist /// Digital Media Producer /// Writer /// Film Enthusiast /// Founder @ Epiction ///
+                    /// State Level Boxing Gold Medalist /// Creative Consultant /// Techpreneur /// Video Game Artist /// Digital Media Producer /// Writer /// Film Enthusiast /// Founder @ Epiction ///
+                </div>
+            </div>
+
+            <!-- Central Composition -->
+            <div class="flex-grow flex flex-col md:flex-row items-center justify-center relative p-4 overflow-hidden">
+                <!-- Background Geometric Shapes -->
+                <div class="absolute top-1/4 left-10 w-48 h-48 rounded-full bg-indi-pink mix-blend-multiply opacity-80 blur-sm animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-10 w-64 h-64 bg-indi-blue mix-blend-multiply opacity-80 transform rotate-12"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] border-[20px] border-indi-red opacity-10 rounded-full animate-spin-slow pointer-events-none"></div>
+
+                <!-- Main Title -->
+                <div class="z-20 text-center md:text-left mix-blend-hard-light relative">
+                    <h1 class="font-display text-[15vw] md:text-[13vw] leading-[0.8] text-indi-red text-shadow-retro uppercase transform -rotate-2 hover:scale-105 transition-transform duration-500">
+                        Gyan<br>Prabhat
+                    </h1>
+                    
+                    <!-- Stacked Roles with offset -->
+                    <div class="flex flex-col items-center md:items-start gap-2 mt-6 transform rotate-1">
+                        <div class="font-condensed text-3xl md:text-5xl uppercase tracking-tighter bg-black text-white px-4 py-2 shadow-[8px_8px_0px_#E10098] hover:bg-indi-pink transition-colors">
+                            Founder @ Epiction
+                        </div>
+                        <div class="font-condensed text-2xl md:text-4xl uppercase tracking-tighter bg-white text-black px-4 py-1 border-2 border-black shadow-[6px_6px_0px_#00BFFF]">
+                            Multidisciplinary Artist
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-2 max-w-3xl font-bold font-type text-sm md:text-base">
+                        <span class="bg-indi-blue text-black px-2 border-2 border-black transform rotate-2 hover:z-10 hover:scale-110 transition">Writer</span>
+                        <span class="bg-indi-red text-white px-2 border-2 border-black transform -rotate-2 hover:z-10 hover:scale-110 transition">Creative Consultant</span>
+                        <span class="bg-indi-yellow text-black px-2 border-2 border-black transform rotate-1 hover:z-10 hover:scale-110 transition">Film Enthusiast</span>
+                        <span class="bg-indi-teal text-white px-2 border-2 border-black transform -rotate-1 hover:z-10 hover:scale-110 transition">Digital Media Producer</span>
+                        <span class="bg-indi-pink text-white px-2 border-2 border-black transform rotate-3 hover:z-10 hover:scale-110 transition">Video Game Artist & Publisher</span>
+                    </div>
+                </div>
+
+                <!-- Halftone Portrait Simulation -->
+                <div class="absolute right-0 bottom-0 md:w-1/2 h-full opacity-60 pointer-events-none mix-blend-multiply z-0">
+                    <div class="w-full h-full bg-halftone opacity-30"></div>
+                    <svg viewBox="0 0 200 200" class="w-full h-full absolute bottom-0 right-0 fill-current text-indi-ink">
+                         <path d="M100,200 C40,200 40,150 50,120 C60,90 80,80 80,60 C80,40 70,30 80,10 C90,-10 130,-10 140,10 C150,30 140,40 140,60 C140,80 160,90 170,120 C180,150 180,200 120,200 Z" opacity="0.9"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Bottom Data Line -->
+            <div class="border-t-4 border-black bg-indi-paper p-4 font-type text-xs md:text-sm flex flex-col md:flex-row justify-between items-center z-10 gap-2">
+                <span class="bg-black text-white px-2">GENESIS: 2002</span>
+                <span class="animate-flicker text-indi-red font-bold text-xl order-first md:order-none">● LIVE FEED</span>
+                <span class="bg-black text-white px-2 text-center">MUMBAI • VADODARA • VARANASI • RANCHI</span>
+            </div>
+        </header>
+
+        <!-- ABOUT SECTION: NEWSPAPER STYLE -->
+        <section class="p-6 md:p-20 bg-indi-paper relative overflow-hidden">
+            <div class="absolute inset-0 pattern-zigzag"></div>
+            
+            <div class="max-w-7xl mx-auto section-border bg-white p-8 relative z-10">
+                <!-- Decorative Tags -->
+                <div class="absolute -top-6 -right-6 bg-indi-blue text-white font-condensed text-3xl px-6 py-2 transform rotate-3 border-4 border-black shadow-[4px_4px_0px_black]">
+                    THE CREATIVE INDEX
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mt-4">
+                    <!-- Column 1: Image/Graphic -->
+                    <div class="md:col-span-5 relative">
+                        <div class="border-4 border-black p-2 bg-indi-teal transform -rotate-1 shadow-[10px_10px_0px_rgba(0,0,0,0.5)]">
+                            <div class="w-full h-96 bg-black grayscale contrast-125 relative overflow-hidden group">
+                                <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center opacity-70 group-hover:scale-110 transition-transform duration-500 mix-blend-luminosity"></div>
+                                <div class="absolute inset-0 bg-indi-red mix-blend-lighten opacity-40"></div>
+                                <div class="absolute bottom-0 left-0 w-full bg-black text-white font-tech text-xl p-2 text-center">FIG 1.0: THE ARCHITECT</div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-indi-yellow rounded-full border-4 border-black flex items-center justify-center font-ornate text-4xl text-black animate-spin-slow mix-blend-multiply z-20">
+                            GP
+                        </div>
+                         <!-- Tattoo Count Badge -->
+                         <div class="absolute top-0 -right-4 bg-indi-pink text-white w-20 h-20 rounded-full flex items-center justify-center font-bold border-4 border-black transform rotate-12 z-20 shadow-lg">
+                            5<br>TATS
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Text -->
+                    <div class="md:col-span-7 font-type text-justify flex flex-col justify-center">
+                        <h2 class="font-display text-6xl mb-6 border-b-8 border-double border-black pb-4 text-indi-ink">WHO IS HE?</h2>
+                        <p class="mb-4 text-lg leading-relaxed first-letter:text-7xl first-letter:font-display first-letter:float-left first-letter:mr-4 first-letter:mt-[-15px] first-letter:text-indi-red">
+                            Techpreneur and founder of <strong class="bg-indi-yellow px-1 border border-black">Epiction Interactive LLP</strong>, working at the intersection of tech, storytelling, and design. My focus spans video games, AI tools, interactive experiences, and creative media. Driven by a childish desire to build things I consider cool.
+                        </p>
+                        <p class="mb-4 text-lg leading-relaxed">
+                            Past includes creative design, programming (8+ years of experience), filmmaking, music, cinematography, and flight physics. Also authored two books and competed as a state-level boxing gold medalist.
+                        </p>
+                        <p class="mb-4 text-lg leading-relaxed border-l-4 border-indi-pink pl-4 italic bg-gray-100 p-2">
+                            "At Epiction, we build what doesn't exist yet: video games, narratives, and product designed to provoke thought and solve problems. <span class="line-through decoration-red-500 decoration-2">(Lie* we only make what I think is cool)</span>"
+                        </p>
+                        <p class="mb-6 font-bold text-indi-blue text-xl">I value art & artist.</p>
+                        
+                        <!-- Vintage Ad Callout -->
+                        <div class="border-4 border-black p-4 mt-4 bg-indi-mustard transform rotate-1 shadow-[8px_8px_0px_#fff]">
+                            <div class="flex items-center gap-6">
+                                <i class="fa-solid fa-hand-fist text-5xl text-white drop-shadow-md"></i>
+                                <div>
+                                    <h3 class="font-condensed text-3xl uppercase">Heavyweight Credentials</h3>
+                                    <p class="text-sm font-bold">State-level boxing gold medalist. Military aviation knowledge. Discipline meets creativity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE ATELIER: ANCIENT ARTISTIC REDESIGN -->
+        <section class="h-[80vh] bg-stone-200 relative border-y-8 border-indi-red overflow-hidden flex items-center justify-center">
+            <!-- Marble Texture Background -->
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-wall-3.png')] opacity-80 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560780552-ba546eb4226f?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay grayscale"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-center p-8 md:p-12 border-8 border-double border-black bg-white/60 backdrop-blur-sm shadow-[0_0_50px_rgba(0,0,0,0.3)] max-w-5xl mx-4 transform -rotate-1 hover:rotate-0 transition-transform duration-700">
+                <h2 class="font-ancient text-5xl md:text-7xl text-indi-ink mb-6 italic leading-tight drop-shadow-md">
+                    "The Most Creative is the most personal."
+                </h2>
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <div class="h-[1px] w-12 bg-black"></div>
+                    <p class="font-display text-2xl md:text-3xl tracking-[0.2em] text-indi-red uppercase">
+                        Martin Scorsese
+                    </p>
+                    <div class="h-[1px] w-12 bg-black"></div>
+                </div>
+            </div>
+            
+            <!-- Greek Statue Elements (Background/Overlay) -->
+            <div class="absolute bottom-0 right-[-10%] w-[60vh] h-[90vh] opacity-50 mix-blend-multiply pointer-events-none filter sepia-[.4] contrast-125">
+                <img src="https://images.unsplash.com/photo-1543857770-72457494512e?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover object-top" alt="Classical Statue">
+            </div>
+             <div class="absolute top-[-10%] left-[-10%] w-[50vh] h-[70vh] opacity-20 mix-blend-multiply pointer-events-none transform scale-x-[-1] filter sepia-[.4] contrast-125">
+                <img src="https://images.unsplash.com/photo-1550950383-a9d4a468d6f9?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Classical Statue">
+            </div>
+        </section>
+
+        <!-- R&D LAB 001: REVERTED TO CLASSIC -->
+        <section class="py-24 bg-black text-neon-lime font-type relative overflow-hidden border-b-8 border-neon-lime">
+            <!-- Grid Background -->
+            <div class="absolute inset-0 bg-[linear-gradient(rgba(204,255,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(204,255,0,0.1)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+            
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="border-4 border-neon-lime p-8 bg-black/80 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-8 border-b-2 border-dashed border-neon-lime pb-4">
+                        <h2 class="text-5xl md:text-7xl font-tech uppercase tracking-widest text-shadow-neon">R&D Lab 001</h2>
+                        <i class="fa-solid fa-microchip text-5xl animate-pulse"></i>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Terminal Text -->
+                        <div class="font-type text-sm leading-relaxed">
+                            <p class="mb-4 text-white">> INITIALIZING EXPERIMENTAL PROTOCOLS...</p>
+                            <p class="mb-4 text-justify opacity-90 text-neon-lime">
+                                Currently compiling data on <span class="bg-neon-lime text-black font-bold px-1">Coffee Brewing methods</span> and <span class="bg-neon-lime text-black font-bold px-1">Expressionism</span>.
+                            </p>
+                            <p class="animate-pulse">> STATUS: BREWING</p>
+                        </div>
+
+                        <!-- Visual Blueprint (Coffee Mug) -->
+                        <div class="border-2 border-neon-lime p-2 relative h-64 flex items-center justify-center overflow-hidden">
+                            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-20"></div>
+                            <i class="fa-solid fa-mug-hot text-8xl text-neon-lime animate-float drop-shadow-[0_0_15px_rgba(204,255,0,0.5)]"></i>
+                            <div class="absolute bottom-2 right-2 text-xs">FIG_COFFEE_PROTO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VENTURES SECTION: MATCHBOX/POSTER GRID -->
+        <section class="py-20 px-4 bg-indi-paper bg-[radial-gradient(#d4a017_2px,transparent_2px)] bg-[length:24px_24px]">
+            <h2 class="font-display text-center text-6xl md:text-8xl text-indi-ink mb-16 uppercase animate-jitter">The Empire</h2>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Venture 1: Epiction Interactive -->
+                <a href="https://www.epiction.co" target="_blank" class="group relative h-[500px] border-8 border-double border-black bg-indi-red overflow-hidden hover:z-10 transition-all duration-300 hover:scale-105 hover:shadow-[15px_15px_0px_#E10098] cursor-pointer">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-multiply opacity-60"></div>
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-black font-bold px-3 py-1 font-type text-xs border-l-2 border-b-2 border-black">EST. 2022</div>
+                    <div class="relative z-10 p-6 flex flex-col h-full justify-between">
+                        <div class="w-16 h-16 bg-white border-4 border-black flex items-center justify-center rounded-full animate-spin-slow shadow-[4px_4px_0px_black]">
+                            <i class="fa-solid fa-gamepad text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-condensed text-5xl uppercase leading-none mb-2 text-shadow-hard text-white">Epiction<br>Interactive</h3>
+                            <p class="font-type text-sm bg-black text-white inline-block p-1 mb-2">LLP • CREATIVE HUB</p>
+                            <div class="font-tech text-2xl leading-tight text-white border-t-2 border-white pt-2">
+                                Gyan's brainchild. Full-stack multidisciplinary company.
+                            </div>
+                        </div>
+                    </div>
                 </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://youtube.com/c/ToxicElement7" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Youtube profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:youtube"><path fill="currentColor" d="m10 15 5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://github.com/gyanprabhat7" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Github profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:github"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://discord.gg/AQCXAQVZeY" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Discord profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="ic:baseline-discord"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09-.01-.02-.04-.03-.07-.03-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.1 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74.02-.04 0-.08-.04-.09-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.11-.08.22-.17.33-.25.02-.02.05-.02.07-.01 3.44 1.57 7.15 1.57 10.55 0 .02-.01.05-.01.07.01.11.09.22.17.33.26.04.03.04.09-.01.11-.52.31-1.07.56-1.64.78-.04.01-.05.06-.04.09.32.61.68 1.19 1.07 1.74.03.01.06.02.09.01 1.72-.53 3.45-1.33 5.25-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.1-11.95-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z"/></svg>
-                </a>
-              </li><li class="footer-socials__item astro-A52JHQYS">
-                <a href="https://instagram.com/gyann.co" target="_blank" rel="noopener noreferrer" class="footer-socials__link astro-A52JHQYS" title="Open Instagram profile">
-                  <svg viewBox="0 0 24 24" width="24px" height="24px" class="astro-A52JHQYS" astro-icon="mdi:instagram"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-                </a>
-              </li>
-        </ul>
-      </div>
-      <div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Ventures</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="https://epiction.co" class="astro-A52JHQYS">Epiction Interactive</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="https://godigital.epiction.co" class="astro-A52JHQYS">Go Digital</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="https://goto.mangatize.shop" class="astro-A52JHQYS">Mangatize Apparels</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="https://coderspotion.company.site" class="astro-A52JHQYS">Coders Potion</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="https://rebrand.ly/yettobepublished" class="astro-A52JHQYS">Baroda Bucket List</a>
-                </li>
-            </ul>
-          </div><div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Directory</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="/company/about" class="astro-A52JHQYS">About</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/blog" class="astro-A52JHQYS">Blog</a>
-                </li><li class="astro-A52JHQYS">
-                  <a href="/company/contact" class="astro-A52JHQYS">Contact</a>
-                </li>
-            </ul>
-          </div><div class="astro-A52JHQYS">
-            <p class="astro-A52JHQYS"><strong class="astro-A52JHQYS">Courses</strong></p>
-            <ul class="footer-link__list astro-A52JHQYS">
-              <li class="astro-A52JHQYS">
-                  <a href="#" class="astro-A52JHQYS">Coming Soon</a>
-                </li>
-            </ul>
-          </div>
-    </div><div class="footer-copyright__container astro-A52JHQYS">
-      
-      <p class="astro-A52JHQYS">Copyright &copy; 2024 Gyan</p>
-    </div>
-</div>
-</footer>
-	</body>
 
-	
+                <!-- Venture 2: Epiction Softworks -->
+                <a href="https://www.getsoftworks.com" target="_blank" class="group relative h-[500px] border-8 border-double border-black bg-indi-blue overflow-hidden hover:z-10 transition-all duration-300 hover:scale-105 hover:shadow-[15px_15px_0px_#00008B] cursor-pointer">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-multiply opacity-60"></div>
+                    <div class="relative z-10 p-6 flex flex-col h-full justify-between">
+                        <div class="w-16 h-16 bg-white border-4 border-black flex items-center justify-center rounded-full shadow-[4px_4px_0px_black]">
+                            <i class="fa-solid fa-code text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-condensed text-5xl uppercase leading-none mb-2 text-shadow-hard text-white">Epiction<br>Softworks</h3>
+                            <p class="font-type text-sm bg-black text-white inline-block p-1 mb-2">DESIGN STUDIO</p>
+                            <div class="font-tech text-2xl leading-tight text-white border-t-2 border-white pt-2">
+                                Creative Design Studio.<br>Digital Solutions.
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
+                <!-- Venture 3: Coffee -->
+                <div class="group relative h-[500px] border-8 border-double border-black bg-coffee-brown overflow-hidden hover:z-10 transition-all duration-300 hover:scale-105 hover:shadow-[15px_15px_0px_#4B3621]">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-multiply opacity-60"></div>
+                    <div class="relative z-10 p-6 flex flex-col h-full justify-between">
+                        <div class="w-16 h-16 bg-black border-4 border-white flex items-center justify-center rounded-full shadow-[4px_4px_0px_white]">
+                            <i class="fa-solid fa-mug-hot text-3xl text-indi-yellow"></i>
+                        </div>
+                        <div class="text-white">
+                            <h3 class="font-condensed text-5xl uppercase leading-none mb-2 text-shadow-hard text-white">La Virelle<br>Coffee Co.</h3>
+                            <p class="font-type text-sm bg-white text-black inline-block p-1 border border-black mb-2">THE BEAN SYNDICATE</p>
+                            <div class="font-tech text-2xl leading-tight font-bold border-t-2 border-white pt-2">
+                                Coming Soon.<br>My upcoming coffee brand.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS: DEPARTMENT OF CAPABILITY -->
+        <section class="py-20 bg-indi-teal border-y-8 border-black">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-indi-paper border-4 border-black p-4 shadow-[20px_20px_0px_black]">
+                    <!-- Chart Header -->
+                    <div class="bg-indi-red text-white p-6 flex flex-col md:flex-row justify-between items-center border-b-4 border-black gap-4">
+                        <h2 class="font-tech text-5xl uppercase tracking-widest">Department of Capability</h2>
+                        <div class="flex gap-2">
+                             <span class="font-type text-xs bg-black px-2 py-1">REF: GP-2025</span>
+                             <span class="font-type text-xs bg-black px-2 py-1 text-indi-yellow">CONFIDENTIAL</span>
+                        </div>
+                    </div>
+
+                    <!-- Skills Grid (Dense & Varied) -->
+                    <div class="flex flex-wrap gap-2 p-6 font-condensed uppercase justify-center">
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Visual Communication</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Creative Design</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Creative Direction</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Brand Design</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Game Design</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Web Design</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Software Eng.</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Writing</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Boxing</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">VFX</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">GFX</span>
+                        <span class="border-2 border-black bg-coffee-brown text-white px-4 py-2 hover:bg-black hover:-translate-y-1 transition text-xl">Coffee Brewing</span>
+                        <span class="border-2 border-black bg-white px-4 py-2 hover:bg-indi-yellow hover:-translate-y-1 transition text-xl">Philosophy & Spirituality</span>
+                        <span class="border-2 border-black bg-indi-pink text-white px-4 py-2 hover:bg-black hover:-translate-y-1 transition text-xl">Overthinker</span>
+                        <span class="border-2 border-black bg-indi-blue text-white px-4 py-2 hover:bg-black hover:-translate-y-1 transition text-xl">Emotional Being</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFIED DISTINCTION -->
+        <section class="py-20 bg-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/notebook.png')] opacity-50"></div>
+            
+            <div class="max-w-5xl mx-auto relative z-10">
+                <div class="border-8 border-double border-indi-red p-8 bg-[#fffdf0] shadow-2xl transform rotate-1">
+                    <div class="border-2 border-indi-mustard p-6">
+                        <h2 class="font-display text-center text-5xl md:text-7xl text-indi-ink mb-10 underline decoration-wavy decoration-indi-red">CERTIFIED DISTINCTION</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            <!-- Left: Books & Causes -->
+                            <div>
+                                <h3 class="font-condensed text-3xl mb-4 bg-black text-white inline-block px-2 shadow-[4px_4px_0px_#999]">PUBLISHED WORKS</h3>
+                                <ul class="space-y-6 font-type text-sm mb-8">
+                                    <li class="flex items-start gap-4 border-b-2 border-dotted border-gray-400 pb-4">
+                                        <i class="fa-solid fa-book text-4xl text-indi-red"></i>
+                                        <div>
+                                            <a href="https://amzn.in/d/b0vbvAh" target="_blank" class="strong text-xl block font-display hover:text-indi-blue underline">Individuality</a>
+                                            <p class="text-gray-600 italic">Themes of self & existence.</p>
+                                            <span class="text-xs font-bold uppercase tracking-wide bg-indi-pink text-white px-1">Personal Best Work</span>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-4 border-b-2 border-dotted border-gray-400 pb-4">
+                                        <i class="fa-solid fa-scroll text-4xl text-indi-red"></i>
+                                        <div>
+                                            <a href="https://store.pothi.com/book/gyan-prabhat-atlantis-fiction-or-fact/" target="_blank" class="strong text-xl block font-display hover:text-indi-blue underline">Atlantis: Fact or Fiction?</a>
+                                            <p class="text-gray-600 italic">Historical research deep dive.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h3 class="font-condensed text-2xl mb-2 bg-indi-blue text-black inline-block px-2">CAUSES I STAND BY</h3>
+                                <p class="font-type text-sm font-bold leading-relaxed">
+                                    Arts and Culture • Education • Science and Technology • Humanity • History • Nature
+                                </p>
+                            </div>
+
+                            <!-- Right: Recognition -->
+                            <div>
+                                <h3 class="font-condensed text-3xl mb-4 bg-black text-white inline-block px-2 shadow-[4px_4px_0px_#999]">RECOGNITION</h3>
+                                <ul class="space-y-6 font-type text-sm">
+                                    <li class="flex items-center gap-4">
+                                        <i class="fa-solid fa-rocket text-indi-pink text-3xl"></i>
+                                        <div>
+                                            <span class="font-bold text-lg block">Founder</span>
+                                            <span class="text-gray-600">Epiction</span>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center gap-4">
+                                        <i class="fa-solid fa-trophy text-indi-yellow text-3xl drop-shadow-sm"></i>
+                                        <div>
+                                            <span class="font-bold text-lg block">Best in Class Award (Video Games)</span>
+                                            <span class="text-gray-600">Issued by CodeDay.org</span>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center gap-4">
+                                        <i class="fa-solid fa-medal text-indi-blue text-3xl drop-shadow-sm"></i>
+                                        <div>
+                                            <span class="font-bold text-lg block">Runner up, Game Design</span>
+                                            <span class="text-gray-600">ITM</span>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center gap-4">
+                                        <i class="fa-solid fa-medal text-indi-red text-3xl drop-shadow-sm"></i>
+                                        <div>
+                                            <span class="font-bold text-lg block">Gold Medalist</span>
+                                            <span class="text-gray-600">State Level Boxing Championship 2020<br>Boxing Association, Ranchi</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Stamps -->
+                        <div class="stamp-container absolute top-10 right-10 opacity-0 transition-opacity pointer-events-none">
+                            <div class="w-32 h-32 rounded-full border-8 border-indi-red text-indi-red flex items-center justify-center font-bold font-tech text-xl transform -rotate-12 opacity-70 mix-blend-multiply" style="mask-image: url('https://www.transparenttextures.com/patterns/noise.png');">
+                                VERIFIED<br>GENIUS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIRECTOR'S CUT -->
+        <section class="py-24 bg-indi-paper overflow-hidden border-t-8 border-black">
+            <h2 class="font-display text-center text-7xl mb-12 relative z-10 text-shadow-retro">DIRECTOR'S CUT</h2>
+            
+            <div class="relative w-full overflow-x-auto bg-black py-16 flex gap-12 px-12 film-border-y">
+                <!-- Film 1 -->
+                <a href="https://www.imdb.com/title/tt33400456/" target="_blank" class="min-w-[350px] h-[500px] bg-white border-8 border-white relative group overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity z-10 flex flex-col items-center justify-center text-white p-6 text-center">
+                         <h4 class="text-3xl font-condensed text-indi-yellow mb-2">29 STATES 29 FESTIVALS</h4>
+                         <p class="font-type text-sm">Crowdsourced Documentary. 3 Minutes per state. A nationwide tapestry.</p>
+                         <p class="mt-4 font-bold text-indi-pink underline">VIEW ON IMDB</p>
+                    </div>
+                    <!-- Poster Image -->
+                    <div class="w-full h-3/4 bg-gray-800 bg-[url('https://m.media-amazon.com/images/M/MV5BMDNmOTY0OGUtZDgyYS00OWVlLTgyZjgtNGZmZTQ0MDM3Mzg4XkEyXkFqcGc@._V1_.jpg')] bg-cover bg-center relative">
+                        <div class="scan-bar"></div>
+                    </div>
+                    <div class="p-4 h-1/4 bg-indi-ink text-white font-condensed flex justify-between items-center">
+                        <div>
+                            <h3 class="text-3xl text-indi-yellow">29 STATES</h3>
+                            <p class="font-type text-xs mt-1 text-gray-400">DOCU-SERIES</p>
+                        </div>
+                        <span class="text-4xl font-bold opacity-20">01</span>
+                    </div>
+                </a>
+
+                <!-- Film 2 -->
+                <a href="https://www.imdb.com/title/tt35231197/" target="_blank" class="min-w-[350px] h-[500px] bg-white border-8 border-white relative group overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity z-10 flex flex-col items-center justify-center text-white p-6 text-center">
+                         <h4 class="text-3xl font-condensed text-indi-red mb-2">THE COFFEE</h4>
+                         <p class="font-type text-sm">Psychological Thriller. Themes of Insomnia & Hallucination. Nolan/Scorsese Influence.</p>
+                         <p class="mt-4 font-bold text-indi-pink underline">VIEW ON IMDB</p>
+                    </div>
+                    <div class="w-full h-3/4 bg-gray-800 bg-[url('https://m.media-amazon.com/images/M/MV5BOTZjNmQxM2MtNWQ4Mi00YWExLWIyNWMtYWUxNDFhNjY0MjMyXkEyXkFqcGc@._V1_FMjpg_UY2000_.jpg')] bg-cover bg-center relative">
+                        <div class="scan-bar" style="animation-delay: 1s;"></div>
+                    </div>
+                    <div class="p-4 h-1/4 bg-indi-ink text-white font-condensed flex justify-between items-center">
+                        <div>
+                            <h3 class="text-3xl text-indi-red">THE COFFEE</h3>
+                            <p class="font-type text-xs mt-1 text-gray-400">NARRATIVE SHORT</p>
+                        </div>
+                        <span class="text-4xl font-bold opacity-20">02</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- THE VAULT: INSTAGRAM FEED WIDGET -->
+        <section class="py-20 bg-gray-900 border-b-8 border-indi-red relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="w-16 h-16 bg-indi-red rounded-full animate-pulse"></div>
+                    <div>
+                        <h2 class="font-tech text-6xl text-white uppercase">The Vault</h2>
+                        <a href="https://instagram.com/gyann.co" target="_blank" class="text-gray-400 text-2xl font-type hover:text-indi-pink">@gyann.co</a>
+                    </div>
+                </div>
+                
+                <!-- Behold.so Widget -->
+                <div class="w-full bg-black/50 p-4 border-2 border-dashed border-gray-700">
+                    <div data-behold-id="D9ptbCoxdsqscmZisS3T"></div>
+                    <script>
+                      (() => {
+                        const d=document,s=d.createElement("script");s.type="module";
+                        s.src="https://w.behold.so/widget.js";d.head.append(s);
+                      })();
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC: RETRO CONSOLE -->
+        <section class="py-24 bg-[#111]">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="bg-gray-800 border-4 border-gray-600 p-8 rounded-xl relative shadow-[0_0_50px_rgba(225,0,152,0.15)]">
+                    <!-- Metal Texture Overlay -->
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/brushed-alum-dark.png')] opacity-50 pointer-events-none rounded-xl"></div>
+
+                    <!-- Audio Visualizer Faux -->
+                    <div class="h-32 bg-black border-4 border-gray-900 mb-8 flex items-end justify-center gap-2 p-4 overflow-hidden shadow-inner">
+                        <div class="w-6 bg-indi-pink h-[40%] animate-[pulse_0.5s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[70%] animate-[pulse_0.6s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[50%] animate-[pulse_0.4s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[90%] animate-[pulse_0.3s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[60%] animate-[pulse_0.5s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[30%] animate-[pulse_0.7s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[80%] animate-[pulse_0.4s_infinite]"></div>
+                        <div class="w-6 bg-indi-pink h-[50%] animate-[pulse_0.2s_infinite]"></div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-12 items-center relative z-10">
+                        <!-- Cassette Tape -->
+                        <div class="w-72 h-48 bg-indi-yellow rounded-lg border-4 border-black relative p-3 flex flex-col justify-center items-center shadow-2xl transform hover:scale-105 transition-transform rotate-2">
+                            <div class="w-full h-10 bg-indi-red absolute top-0 left-0 rounded-t-sm"></div>
+                            <div class="font-type font-bold text-black z-10 text-sm text-center mb-4 bg-white px-2 mt-4 rotate-1 border border-black">EPIC_MIX_VOL_1.mp3</div>
+                            <div class="flex gap-6 w-full justify-center bg-gray-200 p-2 rounded-full border-2 border-gray-400">
+                                <div class="w-12 h-12 rounded-full border-4 border-black bg-white animate-spin-slow flex items-center justify-center"><div class="w-3 h-3 bg-black"></div></div>
+                                <div class="w-12 h-12 rounded-full border-4 border-black bg-white animate-spin-slow flex items-center justify-center"><div class="w-3 h-3 bg-black"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="text-gray-300 font-tech flex-grow text-center md:text-left">
+                            <h2 class="text-5xl text-indi-blue mb-2 text-shadow-retro">SONIC ARCHITECTURE</h2>
+                            <p class="mb-6 text-lg font-type text-gray-400">Music Composition & Audio Production</p>
+                            <a href="https://open.spotify.com/artist/6HJZFf30rV5FvSXqnplQ6Y" target="_blank" class="inline-block bg-indi-red text-white px-8 py-3 border-b-8 border-red-900 active:border-b-0 active:translate-y-2 hover:bg-red-600 transition-all font-bold tracking-widest text-xl rounded">
+                                <i class="fa-brands fa-spotify mr-2"></i> LISTEN ON SPOTIFY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STYLE CODEX -->
+        <section class="py-24 bg-indi-paper relative">
+             <div class="absolute top-0 w-full h-8 bg-[url('https://www.transparenttextures.com/patterns/zig-zag.png')] opacity-20"></div>
+             
+             <div class="max-w-5xl mx-auto border-l-2 border-r-2 border-dashed border-black px-8">
+                 <div class="text-center mb-12">
+                     <h2 class="font-ornate text-6xl">The Style Codex</h2>
+                     <p class="font-type text-sm mt-2 tracking-[0.5em]">AESTHETIC GUIDELINES V.2.0</p>
+                     <p class="font-type text-xs mt-1 text-gray-500 italic">- For my fellow designers</p>
+                 </div>
+                 <!-- Color Palette (Simplified) -->
+                 <div class="flex justify-center gap-2 mb-8">
+                    <div class="h-16 w-16 bg-indi-pink border-2 border-black"></div>
+                    <div class="h-16 w-16 bg-indi-mustard border-2 border-black"></div>
+                    <div class="h-16 w-16 bg-indi-blue border-2 border-black"></div>
+                    <div class="h-16 w-16 bg-indi-red border-2 border-black"></div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- TIMELINE: CHRONOLOGICAL ARRIVALS -->
+        <section class="py-20 bg-indi-mustard p-4">
+            <div class="max-w-4xl mx-auto bg-black text-indi-yellow border-4 border-white p-4 shadow-xl">
+                <div class="text-center border-b-2 border-dashed border-white pb-4 mb-4">
+                    <h2 class="font-type font-bold text-3xl uppercase">Chronological Arrivals</h2>
+                    <p class="text-xs">TIME TABLE - GYP EXPRESS</p>
+                </div>
+
+                <div class="font-type text-sm md:text-base space-y-2">
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2015</span><span class="w-3/4">First Human Fight</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2018</span><span class="w-3/4">Started Coding</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2019</span><span class="w-3/4">Built first robotics project</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2019</span><span class="w-3/4">Published first video game</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2020</span><span class="w-3/4">Got into design</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2020</span><span class="w-3/4 text-indi-pink font-bold">Won Jharkhand state boxing championship</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2021</span><span class="w-3/4">Studied Vedic Texts in Varanasi (10 mos)</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2022</span><span class="w-3/4 text-indi-blue font-bold">Founded Epiction Interactive</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2023</span><span class="w-3/4">Published 8 Android Games</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2023</span><span class="w-3/4">Published "Atlantis: Fiction or fact"</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2024</span><span class="w-3/4 text-indi-green font-bold">Launched Epiction Softworks</span></div>
+                    <div class="flex justify-between border-b border-gray-700 py-1 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">2025</span><span class="w-3/4">Published "Individuality"</span></div>
+                    <div class="flex justify-between py-2 hover:bg-gray-900 px-2 cursor-pointer transition-colors"><span class="w-1/4 text-white">NOW</span><span class="w-3/4 font-bold animate-pulse text-neon-lime">BUILDING THE FUTURE</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT: POSTAL DESK -->
+        <footer class="py-24 bg-indi-red relative text-white border-t-8 border-dashed border-white">
+            <div class="max-w-5xl mx-auto text-center relative z-10 px-4">
+                <i class="fa-solid fa-envelope-open-text text-7xl mb-6 animate-bounce"></i>
+                <h2 class="font-display text-5xl md:text-8xl mb-10 leading-none">DISPATCH<br>COMMUNIQUE</h2>
+                
+                <div class="flex flex-wrap justify-center gap-8 font-condensed text-2xl">
+                    <a href="https://www.linkedin.com/in/gyanprabhat/" target="_blank" class="bg-white text-black px-8 py-4 border-4 border-black shadow-[8px_8px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all hover:bg-indi-yellow">LINKEDIN</a>
+                    <a href="https://instagram.com/gyann.co" target="_blank" class="bg-white text-black px-8 py-4 border-4 border-black shadow-[8px_8px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all hover:bg-indi-pink hover:text-white">INSTAGRAM</a>
+                    <a href="https://www.imdb.com/name/nm16148386/" target="_blank" class="bg-white text-black px-8 py-4 border-4 border-black shadow-[8px_8px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all hover:bg-indi-blue hover:text-white">IMDB</a>
+                    <a href="mailto:gyan@epiction.co" class="bg-white text-black px-8 py-4 border-4 border-black shadow-[8px_8px_0px_black] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all hover:bg-indi-teal hover:text-white">EMAIL</a>
+                </div>
+
+                <div class="mt-16 font-type text-sm opacity-80 border-t border-white pt-8 inline-block px-12">
+                    <p>© 2025 EPICTION INTERACTIVE LLP. ALL RIGHTS RESERVED.</p>
+                    <p class="mt-2">DESIGNED WITH MAXIMALIST INTENT.</p>
+                </div>
+            </div>
+            
+            <!-- Postmark decoration -->
+            <div class="absolute bottom-10 left-10 w-40 h-40 rounded-full border-4 border-white opacity-20 flex items-center justify-center transform -rotate-12 pointer-events-none">
+                <div class="text-center font-type text-sm leading-none">
+                    POSTAGE<br>PAID<br>INDIA<br>2025
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- EXISTING INTERSECTION OBSERVER CODE ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger Stamp Animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const stamp = entry.target.querySelector('.stamp-container');
+                        if(stamp) stamp.classList.add('stamp-enter');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                 if(section.querySelector('.stamp-container')) {
+                     observer.observe(section);
+                 }
+            });
+
+            // Jitter effect on scroll stop
+            let isScrolling;
+            window.addEventListener('scroll', () => {
+                window.clearTimeout(isScrolling);
+                document.body.style.textShadow = "2px 0 rgba(225,0,152,0.5), -2px 0 rgba(0,191,255,0.5)";
+                isScrolling = setTimeout(() => {
+                    document.body.style.textShadow = "none";
+                }, 100);
+            });
+        });
+    </script>
+</body>
 </html>
