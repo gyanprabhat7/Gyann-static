@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Reality Not Found</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rozha+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'indi-yellow': '#FFD700',
+                        'indi-mustard': '#D4A017',
+                        'indi-pink': '#E10098', 
+                        'indi-red': '#B30000',
+                        'indi-blue': '#00BFFF',
+                        'indi-paper': '#F5E6CA',
+                        'indi-ink': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'display': ['"Rozha One"', 'serif'],
+                        'condensed': ['"Anton"', 'sans-serif'],
+                        'tech': ['"Teko"', 'sans-serif'],
+                        'type': ['"Courier Prime"', 'monospace'],
+                    },
+                    animation: {
+                        'static': 'staticNoise 0.2s steps(4) infinite',
+                    },
+                    keyframes: {
+                        staticNoise: {
+                            '0%': { backgroundPosition: '0 0' },
+                            '100%': { backgroundPosition: '100% 100%' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #1A1A1A;
+            color: #F5E6CA;
+            overflow: hidden;
+        }
+
+        .crt-overlay {
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .noise-bg {
+            background-image: url('https://www.transparenttextures.com/patterns/noise.png');
+            opacity: 0.2;
+        }
+
+        .glitch-text {
+            position: relative;
+        }
+        
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -1px 0 #E10098;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
+
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -1px 0 #00BFFF;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim-1 {
+            0% { clip: rect(20px, 9999px, 80px, 0); }
+            20% { clip: rect(60px, 9999px, 10px, 0); }
+            40% { clip: rect(90px, 9999px, 120px, 0); }
+            60% { clip: rect(10px, 9999px, 50px, 0); }
+            80% { clip: rect(130px, 9999px, 100px, 0); }
+            100% { clip: rect(40px, 9999px, 150px, 0); }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% { clip: rect(120px, 9999px, 20px, 0); }
+            20% { clip: rect(10px, 9999px, 140px, 0); }
+            40% { clip: rect(50px, 9999px, 30px, 0); }
+            60% { clip: rect(80px, 9999px, 110px, 0); }
+            80% { clip: rect(150px, 9999px, 70px, 0); }
+            100% { clip: rect(30px, 9999px, 90px, 0); }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen relative">
+
+    <!-- CRT & Noise Overlay -->
+    <div class="fixed inset-0 crt-overlay z-50"></div>
+    <div class="fixed inset-0 noise-bg animate-static z-40"></div>
+
+    <!-- Main Container -->
+    <div class="relative z-30 max-w-4xl w-full p-4 text-center">
+        
+        <!-- Error Code -->
+        <h1 class="font-display text-[15vw] md:text-[12vw] leading-none text-indi-red glitch-text mix-blend-difference" data-text="404">
+            404
+        </h1>
+
+        <!-- TV Test Pattern Box -->
+        <div class="bg-indi-paper text-indi-ink border-8 border-double border-white p-8 md:p-12 transform -rotate-2 shadow-[0_0_50px_rgba(225,0,152,0.5)] mx-auto max-w-2xl relative">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-indi-yellow border-2 border-black animate-spin-slow"></div>
+            <div class="absolute -bottom-4 -right-4 w-12 h-12 bg-indi-blue border-2 border-black animate-spin-slow"></div>
+
+            <h2 class="font-tech text-5xl md:text-7xl mb-4 uppercase tracking-widest bg-black text-white inline-block px-4">Signal Lost</h2>
+            
+            <p class="font-type text-lg md:text-xl mb-6 font-bold">
+                The page you are looking for has been consumed by the void, or Gyan is currently overthinking its existence in R&D Lab 001.
+            </p>
+
+            <div class="border-t-2 border-dashed border-black pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="font-condensed uppercase text-indi-red text-2xl animate-pulse">
+                    /// SYSTEM ERROR ///
+                </div>
+                <a href="/" class="bg-indi-pink text-white font-tech text-2xl px-8 py-2 border-4 border-black hover:bg-white hover:text-black hover:translate-x-1 hover:translate-y-1 transition-all shadow-[4px_4px_0px_black]">
+                    RETURN TO REALITY
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="absolute top-1/2 left-10 text-6xl text-indi-yellow animate-bounce hidden md:block">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="absolute bottom-20 right-10 text-6xl text-indi-blue animate-spin-slow hidden md:block">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+
+    </div>
+
+    <!-- Footer Marquee -->
+    <div class="fixed bottom-0 w-full bg-indi-red text-white font-type text-xs py-1 z-50 border-t-2 border-white">
+        <marquee scrollamount="12">
+            WARNING: REALITY BREACH DETECTED /// PLEASE EVACUATE TO HOME PAGE /// DO NOT STARE INTO THE PIXELS /// 404 ERROR /// PAGE NOT FOUND ///
+        </marquee>
+    </div>
+
+</body>
+</html>
